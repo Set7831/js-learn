@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+
+    function Animal (name)
+    {
+      this.name = name
+      this.move = true
+    }
+
+    var animal = new Animal ("Животное");
+
+    function Cat(name)
+    {
+      this.name = name
+    }
+
+    Cat.prototype = animal;
+
+    ygl = new Cat('Ygolek');
+    shb = new Cat('Sheba');
+
+    alert(ygl.name);
+    alert(ygl.move);
+    alert(shb.name);
+    alert(shb.move);
+
+  </script>
+
+</body>
+</html>

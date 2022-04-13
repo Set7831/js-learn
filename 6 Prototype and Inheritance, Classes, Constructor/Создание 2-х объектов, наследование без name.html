@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+
+    function Animal ()
+    {
+      this.move = false
+    }
+
+    var animal = new Animal ();
+
+    function Cat()
+    {
+      
+    }
+
+    Cat.prototype = animal;
+
+    ygl = new Cat();
+    shb = new Cat();
+
+    
+    alert(ygl.move);
+    
+    alert(shb.move);
+
+  </script>
+
+</body>
+</html>
