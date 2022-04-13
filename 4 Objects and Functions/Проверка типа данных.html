@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    let value = prompt("Введите значение", "");
+
+    let num = Number(value);
+    let bul = String(value);
+
+    if (((num>=0 || num<=0) && value!="") && (num<100000000000000000000 && num>(-100000000000000000000)) )
+    {
+      alert(typeof num);
+    } 
+
+    else if (bul === "true" || bul === "false" )
+    {
+      alert("Boolean");
+    }
+
+    else if ( value === "null" || value === "")
+    {
+      alert("Null");
+    }
+
+    else if ( value === "undefined")
+    {
+      alert("Undefined");
+    }
+
+    else if (num>=100000000000000000000 || num<=(-100000000000000000000))
+    {
+      let big = BigInt(value)
+      alert(typeof big)
+    }
+    
+    else
+    {
+      alert(typeof value);
+    }
+    
+  </script>
+
+</body>
+</html>
